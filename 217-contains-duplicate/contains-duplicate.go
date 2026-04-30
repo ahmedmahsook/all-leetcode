@@ -3,8 +3,9 @@ func containsDuplicate(nums []int) bool {
     for _,num:=range nums{
         if seen[num]{
             return true
+        }
+        seen[num]=true
     }
-    seen[num]=true
-    }
-    return false
+     return false
+    
 }
